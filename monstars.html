@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>Lineup | The Monstars</title>
+
+		<link type="text/css" rel="stylesheet" href="styles.css" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Passion+One&display=swap" rel="stylesheet">
+
+		<!-- hover css-->
+		<link rel="stylesheet" href="hover.css">
+		<!-- animsition.css -->
+		<link rel="stylesheet" href="animsition.min.css">
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<!-- animsition.js -->
+		<script src="js/animsition.min.js"></script>
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv-printshiv.min.js"></script>
+		<![endif]-->
+
+	</head>
+
+	<body class="lineup_container_monstars animsition">
+		<!-- NAV START -->
+		<header>
+			<nav>
+				<figure class="logo">
+					<a href="index.html"><img src="images/spaceJamLogo.png" alt="" class="hvr-pulse-grow"></a>
+				</figure>
+				<div class="navigation">
+					<figure>
+						<a href="jamcentral.html"> <img src="images/icon_globe.png" alt="" class="hvr-bob"></a>
+						<a href="jamcentral.html" class="navText"><p>JAM CENTRAL</p></a>
+					</figure>
+					<figure>
+						<a href="#"> <img src="images/icon_saturn.png" alt="" class="hvr-grow-rotate"></a>
+						<a href="#" class="navText"><p>THE LINEUP</p></a>
+					</figure>
+					<figure>
+						<a href="lunartunes.html"> <img src="images/icon_basketball.png" alt=""  class="hvr-wobble-vertical"></a>
+						<a href="lunartunes.html" class="navText"><p>LUNAR TUNES</p></a>
+					</figure>
+				</div>
+			</nav>
+		</header>
+
+		<div class="small">
+			<header>
+			  <button class="hamburger">&#9776;</button>
+			  <button class="cross">&#735;</button>
+			</header>
+
+			<div class="menu">
+			  <ul>
+					<a href="jamcentral.html" class="navText"><li>JAM CENTRAL</li></a>
+					<a href="#" class="navText"><li>THE LINEUP</li></a>
+					<a href="lunartunes.html" class="navText"><li>LUNAR TUNES</li></a>
+				</ul>
+			</div>
+		</div>
+		<!-- NAV END -->
+
+		<div class="animsition">
+
+			<div class="heading_lineup">
+				<a href="index.html"><img src="images/spaceJamLogo.png" alt="" class="hvr-pulse-grow"></a>
+				<h1>THE LINEUP</h1>
+				<div class="heading_lineup_atagposition">
+					<a href="lineup.html"
+					class="animsition-link"
+				  data-animsition-out-class="fade-out-right"
+				  data-animsition-out-duration="2000">
+					The All Stars</a>
+
+					<a href="#">
+					The Monstars</a>
+				</div>
+			</div>
+
+			<div class="monstars">
+				<div class="lineup_player_monstars">
+					<img src="images/nadastarbig.gif" alt="Nada The Alien" class="monstars_nada">
+					<p>Nada</p>
+				</div>
+				<div class="lineup_player_monstars">
+					<img src="images/nullstarbig.gif" alt="Null The Alien">
+					<p>Null</p>
+				</div>
+				<div class="lineup_player_monstars">
+					<img src="images/voidstarbig.gif" alt="Void The Alien" class="monstars_void">
+					<p>Void</p>
+				</div>
+				<div class="lineup_player_monstars">
+					<img src="images/zilchstarbig.gif" alt="Zilch The Alien">
+					<p>Zilch</p>
+				</div>
+				<div class="lineup_player_monstars">
+					<img src="images/bupkusstarbig.gif" alt="Bupkus The Alien">
+					<p>Bupkus</p>
+				</div>
+			</div>
+
+			<div class="lineup_meetmonstars_bottom">
+				<a href="lineup.html"> &lt; MEET THE ALL STARS </a>
+			</div>
+		</div>
+
+		<footer>
+			<img src="images/GroupLogo.png" alt="NJJretro Logo">
+			<p>Created 2019</p>
+		</footer>
+
+		<!-- HAMBURGER MENU JS -->
+		<script src="js/hamburger.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".animsition").animsition({
+					inClass: 'rotate-in-sm',
+					outClass: 'rotate-out-sm',
+					inDuration: 1500,
+					outDuration: 800,
+					linkElement: '.animsition-link',
+					// e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+					loading: true,
+					loadingParentElement: 'body', //animsition wrapper element
+					loadingClass: 'animsition-loading',
+					loadingInner: '', // e.g '<img src="loading.svg" />'
+					timeout: false,
+					timeoutCountdown: 5000,
+					onLoadEvent: true,
+					browser: [ 'animation-duration', '-webkit-animation-duration'],
+					// "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+					// The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+					overlay : false,
+					overlayClass : 'animsition-overlay-slide',
+					overlayParentElement : 'body',
+					transition: function(url){ window.location.href = url; }
+				});
+			});
+		</script>
+	</body>
+
+</html>

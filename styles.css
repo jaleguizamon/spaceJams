@@ -1,0 +1,553 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+/*
+font-family: 'Passion One', cursive;
+font-family: 'Open Sans', sans-serif;
+*/
+body{
+	background-image: url('images/starfield.jpg');
+	font-family: 'Passion One', cursive;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.logo_centered img{
+	max-width: 90%;
+	margin: auto;
+	display: flex;
+	padding-top: 10px;
+	animation: pulse 1s 3;
+}
+@keyframes pulse {
+  from { transform: scale(1); }
+  50% { transform: scale(0.85); }
+  to { transform: scale(1); }
+}
+.fe-pulse {
+  animation-name: pulse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.homepage_icons{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	margin: auto;
+	width: 100%;
+	font-family: 'Passion One', cursive;
+	font-size: 1.8rem;
+}
+.homepage_icons figure{
+	padding-bottom: 20px;
+}
+.homepage_icons img{
+	max-width: 150px;
+}
+.homepage_icons p{
+	color:#fdf400;
+	margin: auto;
+	text-align: center;
+	position: relative;
+	top: -15px;
+}
+.homepage_icons a{
+	color: white;
+	text-decoration: none;
+	line-height: .5rem;
+}
+.homepage_icons p:hover{
+	color: #327AE5;
+}
+/*------------ NAV STYLING BEGINS ---------------------- */
+.lineup_container{
+	max-width: 800px;
+	margin: auto;
+}
+.heading_lineup{
+	color:#fdf400;
+	font-family: 'Passion One', cursive;
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+header {
+	display: none;
+	visibility: hidden;
+}
+
+.small, .small header {
+	display: inherit;
+	visibility: visible;
+}
+.small header{
+	width:100%;
+	background:none;
+	height:60px;
+	line-height:60px;
+	position: absolute;
+	top: 2%;
+}
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0%;
+  right:0%;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#00b37c;
+  border:0;
+  font-size:2em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+	padding-right: 10%;
+
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0%;
+  right:0%;
+  padding:12px 15px 0px 15px;
+  color:#8300c4;
+  border:0;
+  font-size:5em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+	padding-right: 10%;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:2em; width:100%; background:none; position:absolute; top:1%; text-align:center;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:0px 0 0 0;}
+.menu li:hover{display: block;  padding:5px 0 5px 0;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
+.menu ul li a:hover {  color: #666; text-decoration:none;}
+.menu a{text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#00b37c;}
+
+.glyphicon-home{
+  color:white;
+  font-size:1.5em;
+  margin-top:5px;
+  margin:0 auto;
+}
+.small header{display:inline-block; font-size:12px;}
+.small span{padding-left:20px;}
+.small a{color:#336699;}
+
+/*------------ NAV STYLING ENDS ---------------------- */
+
+/*------------ LINE UP STYLING BEGINS ---------------------- */
+.heading_lineup img{
+	display: inherit;
+	visibility: visible;
+	max-width: 200px;
+	animation: pulse 1s 3;
+}
+.heading_lineup h1{
+	font-size: 2.8rem;
+	letter-spacing: 2px;
+}
+.heading_lineup_atagposition a{
+	padding: 0 20px;
+	text-decoration: none;
+	color:#fdf400;
+	text-decoration: none;
+	font-size: 1.2rem;
+}
+.heading_lineup_atagposition a:hover{
+	color: #327AE5;
+}
+.firststring{
+	display: flex;
+	flex-direction: column;
+}
+.firststring img{
+	max-width: 100px;
+	border-radius: 300px;
+}
+.firststring p{
+	font-family: 'Passion One', cursive;
+	font-size: 1.5rem;
+	color: #ffffff;
+}
+.lineup_position{
+	font-size: 1.2rem;
+}
+.lineup_player {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 20px 25px;
+}
+.lineup_player div{
+	padding-left: 10px;
+}
+.lineup_description {
+	font-family: 'Open Sans', sans-serif;
+	font-size: .8rem;
+	display: block;
+	padding-top: 8px;
+}
+.secondstring{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.secondstring img{
+	max-width: 100px;
+	border-radius: 300px;
+}
+.secondstring p{
+	font-family: 'Passion One';
+	font-size: 1.3rem;
+	color: #ffffff;
+	padding-top: 10px;
+}
+.lineup_player2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px 20px;
+}
+.lineup_meetmonstars_bottom{
+	display: flex;
+	justify-content: space-evenly;
+	padding-bottom: 40px;
+}
+.lineup_meetmonstars_bottom a{
+	color:#fdf400;
+	font-family: 'Passion One', cursive;
+	text-decoration: none;
+	font-size: 2rem;
+}
+.lineup_meetmonstars_bottom  a:hover{
+	color: #327AE5;
+}
+/*------------ LINE UP STYLING ENDS ---------------------- */
+
+/*----------------Monstars Styling BEGINS --------------------*/
+.lineup_container_monstars{
+	max-width: 800px;
+	margin: auto;
+}
+.monstars{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px 20px;
+	color: #ffffff;
+	font-family: 'Passion One', cursive;
+	font-size: 1.5rem;
+}
+.lineup_player_monstars{
+	padding: 15px 0px;
+
+}
+.monstars img{
+	max-width: 190px;
+}
+.monstars_void{
+	max-height: 300px;
+}
+.monstars_nada{
+	max-width: 225px;
+}
+.monstars p{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+/*---------------- Lunar Tunes BEGINS ------------*/
+.lunartunes_container{
+	max-width: 1000px;
+	margin: auto;
+}
+	.logo_centered h1{
+		font-family: 'Passion One', cursive;
+		font-size: 2.5rem;
+		color: #fdf400;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.lunartunes_subheading{
+		font-family: 'Passion One', cursive;
+		color: #ff9100;
+		display: flex;
+		justify-content: space-around;
+	}
+	.container_lunartunes{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+	.lunartunes_cd img{
+		display: none;
+	}
+	.spotify_container{
+		padding: 20px 10px;
+	}
+	.content, .animsition {
+		flex: 1;
+	}
+	/*---------------- Jam Central BEGINS ------------*/
+	.screenshots {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	.screenshots a {
+		width: 100%;
+	}
+	.circleImage {
+		width: 40%;
+		padding-top: 5%;
+	}
+	.circleImage img {
+		max-width: 100%;
+		border-radius: 50%;
+	}
+	.circleImage a {
+		max-width: 100%
+	}
+	footer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: #ffffff;
+		padding: 5% 0;
+	}
+	footer img {
+		max-width: 10%;
+	}
+	.maintext {
+		color: #ffffff;
+		padding: 8% 2% 2% 2%;
+	}
+	.maintext h2  {
+		text-align: center;
+	}
+	.maintext .lineup_description p:first-child {
+		padding-top: 2%;
+	}
+	.maintext .lineup_description p {
+		padding: 0 5%;
+	}
+	.subheading {
+		font-family: 'Open Sans', sans-serif;
+		font-size: .8rem;
+		display: block;
+		text-align: center;
+	}
+	.youTube {
+		display: flex;
+		justify-content: center;
+	}
+	.youTube iframe {
+		width: 85%;
+		padding-top: 5%;
+		height: 200px;
+		frameborder: 0;
+	}
+	.lightboxOverlay:focus {
+		outline: none!important;
+	}
+
+/*---------------- Lunar Tunes BEGINS ------------*/
+
+/*----------------Monstars Styling ENDS --------------------*/
+@media (min-width:500px) {
+	.heading_lineup img {
+    max-width: 350px;
+	}
+	.heading_lineup h1 {
+    font-size: 3.2rem;
+	}
+	.heading_lineup_atagposition a {
+	   font-size: 1.5rem;
+	}
+	.firststring{
+		padding: 10px 25px;
+	}
+	.secondstring{
+		padding: 0 25px;
+	}
+	.monstars{
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-end;
+		justify-content: space-evenly;
+		}
+	.lineup_player_monstars{
+    padding: 15px 10px;
+	}
+	header {
+		display: inherit;
+		visibility: visible;
+	}
+	nav {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+
+	}
+	header nav .navigation {
+		display: flex;
+	}
+	header nav .navigation img {
+		max-width: 100px;
+	}
+	.navigation figure p, .navigation figure a{
+		color: #ffffff;
+		font-family: 'Passion One', cursive;
+		text-decoration: none;
+		text-align: center;
+	}
+	header nav .navigation p{
+		opacity: 0;
+	}
+	header nav .navigation figure:hover p {
+		opacity: 1;
+	}
+	.logo img {
+		max-width: 150px;
+		animation: pulse 1s 3;
+	}
+	.heading_lineup img, .small{
+		display: none;
+		visibility: hidden;
+	}
+}
+
+@media (min-width: 550px) {
+	.logo_centered img{
+		max-width: 70%;
+	}
+	.homepage_icons {
+		flex-direction: row;
+	}
+	.menu, .hamburger, .cross {
+		position: absolute;
+		top: 5%;
+	}
+	.youTube iframe {
+		height: 400px;
+	}
+}
+@media (min-width:600px) {
+	.homepage_icons img{
+			max-width: 175px;
+			padding: 0 20px;
+	}
+	.homepage_icons{
+		justify-content: center;
+	}
+	.firststring{
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+	.lineup_player{
+		flex-basis: 40%;
+	  padding: 25px 25px;
+	}
+	.lineup_player_monstars{
+		padding: 15px 20px;
+	}
+	.circleImage {
+		width: 30%;
+	}
+}
+@media (min-width:700px) {
+	/* .firststring h1, .firststring p{
+		position: relative;
+		top: -25px;
+	} */
+	.container_lunartunes{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	.lunartunes_cd img{
+		max-width: 350px;
+		display: block;
+	}
+	.rotate {
+	animation: rotation 8s infinite linear;
+	}
+	@keyframes rotation {
+		from {
+			transform: rotate(0deg);
+		}
+		to {
+			transform: rotate(359deg);
+		}
+	}
+}
+@media (min-width:850px) {
+	.logo_centered img{
+		max-width: 60%;
+	}
+	.homepage_icons img{
+			padding: 0 40px;
+	}
+}
+@media (min-width:900px) {
+	.lineup_container{
+		max-width: 850px;
+	}
+	.container_lunartunes{
+		padding-top: 25px;
+	}
+	.lunartunes_cd img{
+		max-width:450px ;
+	}
+}
+@media (min-width:950px) {
+	.lineup_container{
+			max-width: 950px;
+	}
+	.heading_lineup img {
+		max-width: 400px;
+	}
+	.firststring img {
+    max-width: 125px;
+	}
+	.secondstring img{
+		max-width: 115px;
+	}
+	.youTube iframe {
+		height: 500px;
+	}
+}
+@media (min-width:1000px) {
+	.logo_centered img{
+		max-width: 40%;
+	}
+	.container_lunartunes{
+		position: relative;
+		top: -15px;
+	}
+}
+@media (min-width:1200px) {
+	.lineup_container_monstars{
+		max-width: 1150px;
+	}
+}

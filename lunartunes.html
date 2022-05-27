@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>Lunar Tunes</title>
+
+		<link type="text/css" rel="stylesheet" href="styles.css" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Passion+One&display=swap" rel="stylesheet">
+
+		<!-- hover css-->
+		<link rel="stylesheet" href="hover.css">
+		<!-- animsition.css -->
+		<link rel="stylesheet" href="animsition.min.css">
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<!-- animsition.js -->
+		<script src="js/animsition.min.js"></script>
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv-printshiv.min.js"></script>
+		<![endif]-->
+
+	</head>
+
+	<body class="container lineup_container animsition">
+		<!-- NAV START -->
+		<header>
+			<nav>
+				<figure class="logo">
+					<a href="index.html"><img src="images/spaceJamLogo.png" alt="" class="hvr-pulse-grow"></a>
+				</figure>
+				<div class="navigation">
+					<figure>
+						<a href="jamcentral.html"> <img src="images/icon_globe.png" alt="" class="hvr-bob"></a>
+						<a href="jamcentral.html" class="navText"><p>JAM CENTRAL</p></a>
+					</figure>
+					<figure>
+						<a href="lineup.html"> <img src="images/icon_saturn.png" alt="" class="hvr-grow-rotate"></a>
+						<a href="lineup.html" class="navText"><p>THE LINEUP</p></a>
+					</figure>
+					<figure>
+						<a href="#"> <img src="images/icon_basketball.png" alt=""  class="hvr-wobble-vertical"></a>
+						<a href="#" class="navText"><p>LUNAR TUNES</p></a>
+					</figure>
+				</div>
+			</nav>
+		</header>
+
+		<div class="small">
+			<header>
+			  <button class="hamburger">&#9776;</button>
+			  <button class="cross">&#735;</button>
+			</header>
+
+			<div class="menu">
+			  <ul>
+					<a href="jamcentral.html" class="navText"><li>JAM CENTRAL</li></a>
+					<a href="lineup.html" class="navText"><li>THE LINEUP</li></a>
+					<a href="#" class="navText"><li>LUNAR TUNES</li></a>
+				</ul>
+			</div>
+		</div>
+		<!-- NAV END -->
+	<div class="content">
+		<div class="animsition">
+			<div class="heading_lineup">
+				<a href="index.html"><img src="images/spaceJamLogo.png" alt="" class="hvr-pulse-grow"></a>
+				<h1>LUNAR TUNES</h1>
+
+				<p><span class="lunartunes_subheading">Jam out to songs from the official Soundtrack </span></p>
+			</div>
+		</div>
+
+		<div class="container_lunartunes">
+			<div class="lunartunes_cd">
+				<img src="images/spacejam_cd.png" alt="image of cd cover for Space Jam Soundrack" class="rotate">
+			</div>
+
+			<div class="spotify_container">
+				<iframe src="https://open.spotify.com/embed/album/5qdsq5YryqAynT65vpaumI" style="border: 0; width: 100%; height: 380px;" allowfullscreen allow="encrypted-media"></iframe>
+			</div>
+		</div>
+	</div>
+
+
+		<footer>
+			<img src="images/GroupLogo.png" alt="NJJretro Logo">
+			<p>Created 2019</p>
+		</footer>
+
+
+
+		<!-- HAMBURGER MENU JS -->
+		<script src="js/hamburger.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".animsition").animsition({
+					inClass: 'rotate-in-sm',
+					outClass: 'rotate-out-sm',
+					inDuration: 1500,
+					outDuration: 800,
+					linkElement: '.animsition-link',
+					// e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+					loading: true,
+					loadingParentElement: 'body', //animsition wrapper element
+					loadingClass: 'animsition-loading',
+					loadingInner: '', // e.g '<img src="loading.svg" />'
+					timeout: false,
+					timeoutCountdown: 5000,
+					onLoadEvent: true,
+					browser: [ 'animation-duration', '-webkit-animation-duration'],
+					// "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+					// The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+					overlay : false,
+					overlayClass : 'animsition-overlay-slide',
+					overlayParentElement : 'body',
+					transition: function(url){ window.location.href = url; }
+				});
+			});
+		</script>
+
+	</body>
+
+</html>
